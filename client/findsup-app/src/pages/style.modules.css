@@ -1,0 +1,780 @@
+:root{
+    --primary-color: rgb(97, 156, 41);
+    --secordary-color: white;
+    --background-color: whitesmoke;
+    --box-shadow: #3a3232;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/******************************* Sign Up *******************************/
+
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 90vh;
+}
+.signup form{
+    width: 400px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px var(--box-shadow);
+    transform: translateY(5px);
+    transition: .5s ease;
+}
+.signup form:hover{
+    transform: translateY(0px);
+}
+.signup form .contain-element{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.signup form .contain-element .btn-signup-google{
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    height: 40px;
+    border-radius: 5px;
+}
+.signup form .contain-element .btn-signup-google:hover{
+    color: white;
+    background-color: var(--primary-color);
+    transform: scale(1);
+}
+.signup form .contain-element .signupwith{
+    color: var(--primary-color);
+    margin: 20px;
+}
+.signup form .contain-element h1{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+.signup form .contain-element h3{
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+.signup form .contain-element .username{
+    display: flex;
+    flex-direction: column;
+}
+.signup form .contain-element .username label{
+    font-size: 1rem;
+    color: var(--primary-color);
+    position: relative;
+    left: -110px;
+}
+.signup form .contain-element .username input{
+    color: var(--primary-color);
+    background-color: var(--secordary-color);
+    height: 30px;
+    border: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    transform: translateY(2px);
+    transition: .5s ease;
+}
+.signup form .contain-element .username input:hover{
+    transform: translateY(0px);
+    box-shadow: 0px 1px 5px var(--box-shadow);
+}
+.signup form .contain-element .username input:focus{
+    outline: 2px solid var(--primary-color);
+}
+.signup form .contain-element .email{
+    display: flex;
+    flex-direction: column;
+}
+.signup form .contain-element .email label{
+    font-size: 1rem;
+    color: var(--primary-color);
+    position: relative;
+    left: -120px;
+}
+.signup form .contain-element .email input{
+    color: var(--primary-color);
+    background-color: var(--secordary-color);
+    height: 30px;
+    border: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    transform: translateY(2px);
+    transition: .5s ease;
+}
+.signup form .contain-element .email input:hover{
+    transform: translateY(0px);
+    box-shadow: 0px 1px 5px var(--box-shadow);
+}
+.signup form .contain-element .email input:focus{
+    outline: 2px solid var(--primary-color);
+}
+.signup form .contain-element .password{
+    display: flex;
+    flex-direction: column;
+}
+.signup form .contain-element .password label{
+    font-size: 1rem;
+    color: var(--primary-color);
+    position: relative;
+    left: -110px;
+}
+.signup form .contain-element .password input{
+    color: var(--primary-color);
+    background-color: var(--secordary-color);
+    height: 30px;
+    border: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    transform: translateY(2px);
+    transition: .5s ease;
+}
+.signup form .contain-element .password input:hover{
+    transform: translateY(0px);
+    box-shadow: 0px 1px 5px var(--box-shadow);
+}
+.signup form .contain-element .password input:focus{
+    outline: 2px solid var(--primary-color);
+}
+.signup form .contain-element button{
+    cursor: pointer;
+    color: white;
+    background-color: var(--primary-color);
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    transition: .5s ease;
+}
+.signup form .contain-element button:hover{
+    box-shadow: 0px 1px 5px var(--box-shadow);
+}
+.signup form .contain-element p{
+    color: var(--primary-color);
+}
+.signup form .contain-element p .linktosignin{
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-left: 5px;
+}
+.signup form .contain-element p .linktosignin:hover{
+    text-decoration: underline;
+}
+
+/******************************* VerifyEmail *******************************/
+.verifyemail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 90vh;
+}
+.verifyemail .contain-elem-verifyemail{
+    max-width: 400px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 1px 3px var(--box-shadow);
+    border-radius: 5px;
+}
+.verifyemail .contain-elem-verifyemail h1{
+    color: var(--primary-color);
+}
+.verifyemail .contain-elem-verifyemail p{
+    color: var(--primary-color);
+}
+
+/******************************* Verified*******************************/
+.verify{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 90vh;
+}
+.verify .contain-elem-verify{
+    max-width: 400px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 1px 3px var(--box-shadow);
+    border-radius: 5px;
+}
+.verify .contain-elem-verify h2{
+    color: var(--primary-color);
+}
+
+/******************************* Sign Up *******************************/
+
+.signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 90vh;
+}
+.signin form{
+    width: 400px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px var(--box-shadow);
+    transform: translateY(5px);
+    transition: .5s ease;
+}
+.signin form:hover{
+    transform: translateY(0px);
+}
+.signin form .contain-element{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.signin form .contain-element .btn-signin-google{
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    height: 40px;
+    border-radius: 5px;
+}
+.signin form .contain-element .btn-signin-google:hover{
+    color: white;
+    background-color: var(--primary-color);
+    transform: scale(1);
+}
+.signin form .contain-element .signinwith{
+    color: var(--primary-color);
+    margin: 20px;
+}
+.signin form .contain-element h1{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+.signin form .contain-element h3{
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+.signin form .contain-element .email{
+    display: flex;
+    flex-direction: column;
+}
+.signin form .contain-element .email label{
+    font-size: 1rem;
+    color: var(--primary-color);
+    position: relative;
+    left: -125px;
+}
+.signin form .contain-element .email input{
+    color: var(--primary-color);
+    background-color: var(--secordary-color);
+    height: 30px;
+    border: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    transform: translateY(2px);
+    transition: .5s ease;
+}
+.signin form .contain-element .email input:hover{
+    transform: translateY(0px);
+}
+.signin form .contain-element .email input:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+.signin form .contain-element .password{
+    display: flex;
+    flex-direction: column;
+}
+.signin form .contain-element .password label{
+    font-size: 1rem;
+    color: var(--primary-color);
+    position: relative;
+    left: -110px;
+}
+.signin form .contain-element .password .forgot-pass{
+    position: absolute;
+    right: -50px;
+}
+.signin form .contain-element .password .forgot-pass label:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.signin form .contain-element .password input{
+    color: var(--primary-color);
+    background-color: var(--secordary-color);
+    height: 30px;
+    border: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    transform: translateY(2px);
+    transition: .5s ease;
+}
+.signin form .contain-element .password input:hover{
+    transform: translateY(0px);
+}
+.signin form .contain-element .password input:focus{
+    outline: 1px solid var(--primary-color);
+}
+.signin form .contain-element button{
+    cursor: pointer;
+    color: white;
+    background-color: var(--primary-color);
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    transition: .5s ease;
+}
+.signin form .contain-element button:hover{
+    box-shadow: 0px 1px 5px var(--box-shadow);
+}
+.signin form .contain-element p{
+    color: var(--primary-color);
+}
+.signin form .contain-element p .linktosignup{
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-left: 5px;
+}
+.signin form .contain-element p .linktosignup:hover{
+    text-decoration: underline;
+}
+
+
+/******************************* Home *******************************/
+hr{
+    width: 80%;
+    margin-bottom: 20px;
+}
+.home{
+    width: 100%;
+    height: 90vh;
+}
+.home .navigation{
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+.home .navigation h1{
+    color: white;
+    font-size: 3rem;
+    margin-left: 100px;
+    transition: .5s ease;
+}
+.home .navigation h1:hover{
+    transform: scale(1.1);
+}
+.home .navigation .btn-getstarted{
+    cursor: pointer;
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    font-weight: 500;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    right: 100px;
+    transition: .5s ease;
+}
+.home .navigation .btn-getstarted:hover{
+    color: white;
+    background-color: var(--primary-color);
+    box-shadow: 0px 1px 5px var(--box-shadow);
+    transform: scale(1.1);
+}
+
+.home header{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.home header .videobg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.home main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    /* border: 1px solid red; */
+}
+.home main h1{
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.home main h3{
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.home main .reason-features{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.home main .reason-features .feature{
+    background-color: var(--background-color);
+    width: 80%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.home main .reason-features .feature:hover{
+    box-shadow: 0px 1px 3px var(--box-shadow);
+}
+.home main .reason-features .feature h2{
+    color: var(--primary-color);
+}
+.home main .reason-features .feature p{
+    color: var(--primary-color);
+}
+
+.home main .howitworks{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 20px; */
+}
+.home main .howitworks .steps{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.home main .howitworks .steps .step{
+    background-color: var(--primary-color);
+    width: 80%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.home main .howitworks .steps .step:hover{
+    box-shadow: 0px 1px 3px var(--box-shadow);
+}
+.home main .howitworks .steps .step h2{
+    color: var(--secordary-color);
+}
+.home main .howitworks .steps .step p{
+    color: var(--secordary-color);
+}
+
+.home main form{
+    background-color: var(--primary-color);
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.home main form:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 1px 5px var(--box-shadow);
+}
+.home main form .formheader{
+    width: 60%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+.home main form .formheader h1{
+    color: var(--secordary-color);
+}
+.home main form .formheader h2{
+    color: var(--secordary-color);
+}
+.home main form .formcontent{
+    background-color: var(--background-color);
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 10px;
+    transform: translateY(5px);
+    transition: .5s ease;
+}
+.home main form .formcontent:hover{
+    transform: translateY(0px);
+    box-shadow: 0px 1px 5px var(--box-shadow);
+}
+.home main form .formcontent h2{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+.home main form .formcontent .businessname{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.home main form .formcontent .businessname label{
+    color: var(--primary-color);
+}
+.home main form .formcontent .businessname input{
+    color: var(--primary-color);
+    outline: none;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.home main form .formcontent .businessname input:focus{
+    outline: 2px solid var(--primary-color);
+}
+.home main form .formcontent .yourname{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.home main form .formcontent .yourname label{
+    color: var(--primary-color);
+}
+.home main form .formcontent .yourname input{
+    color: var(--primary-color);
+    outline: none;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.home main form .formcontent .yourname input:focus{
+    outline: 2px solid var(--primary-color);
+}
+.home main form .formcontent .emailaddress{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.home main form .formcontent .emailaddress label{
+    color: var(--primary-color);
+}
+.home main form .formcontent .emailaddress input{
+    color: var(--primary-color);
+    outline: none;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.home main form .formcontent .emailaddress input:focus{
+    outline: 2px solid var(--primary-color);
+}
+.home main form .formcontent .phonenumber{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.home main form .formcontent .phonenumber label{
+    color: var(--primary-color);
+}
+.home main form .formcontent .phonenumber input{
+    color: var(--primary-color);
+    outline: none;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.home main form .formcontent .phonenumber input:focus{
+    outline: 2px solid var(--primary-color);
+}
+.home main form button{
+    cursor: pointer;
+    color: var(--secordary-color);
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 40px;
+    border: none;
+}
+
+.home footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+.home footer p{
+    color: var(--secordary-color);
+}
+
+/******************************* Responsive Design *******************************/
+
+@media only screen and (max-width: 1680px) {
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+}
+
+@media only screen and (max-width: 1080px) {
+    .home .navigation h1{
+        font-size: 3rem;
+        margin-left: 50px;
+    }
+    .home .navigation .btn-getstarted{
+        right: 50px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .home .navigation{
+        width: 100%;
+        height: 80px;
+    }
+    .home .navigation h1{
+        font-size: 2.5rem;
+        margin-left: 50px;
+    }
+    .home .navigation .btn-getstarted{
+        right: 50px;
+    }
+
+    .home header{
+        height: 400px;
+    }
+    .home main h1{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .home main h3{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .home main .reason-features{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .home main .reason-features .feature{
+        width: 100%;
+    }
+
+    .home main .howitworks{
+        width: 100%;
+    }
+    .home main .howitworks .steps{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .home main .howitworks .steps .step{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .home main .reason-features .feature{
+        width: 100%;
+        height: 150px;
+        justify-content: center;
+    }
+    .home main .reason-features .feature h2{
+        font-size: 1rem;
+    }
+    .home main .reason-features .feature p{
+        font-size: 1rem;
+    }
+
+    .home main .howitworks .steps .step h2{
+        font-size: 1rem;
+    }
+    .home main .howitworks .steps .step p{
+        font-size: 1rem;
+    }   
+}
+
+@media only screen and (max-width: 360px){
+    .home .navigation h1{
+        font-size: 2rem;
+        margin-left: 30px;
+    }
+    .home .navigation .btn-getstarted{
+        width: 80px;
+        height: 30px;
+        right: 30px;
+    }
+    .home header{
+        height: 300px;
+    }
+}
