@@ -5,6 +5,7 @@ import Signin from './pages/Signin';
 import Home from './pages/Home';
 import Verify from './pages/Verify';
 import VerifyEmail from './pages/VerifyEmail';
+import SuppliesProduct from './pages/SuppliesProduct';
 
 const App = () => {
 
@@ -28,6 +29,10 @@ const App = () => {
     {
       path: '/',
       element: <Home/>
+    },
+    {
+      path: '/suppliesproducts',
+      element: <SuppliesProduct/>
     },
   ])
 

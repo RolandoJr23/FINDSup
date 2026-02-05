@@ -1,0 +1,64 @@
+:root{
+    --primary-color: rgb(97, 156, 41);
+    --secordary-color: white;
+    --background-color: whitesmoke;
+    --box-shadow: #3a3232;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/******************************* Profile *******************************/
+
+.profile{
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 30px;
+    right: 100px;
+    background-color: var(--secordary-color);
+    border-radius: 50%;
+}
+
+
+/******************************* Dropdown Profile *******************************/
+
+.dropdownprofile{
+    cursor: pointer;
+    width: 100px;
+    background-color: var(--secordary-color);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    right: 90px;
+    top: 90px;
+    border: 1px solid gray;
+}
+.dropdownprofile ul{
+    display: flex;
+    flex-direction: column;
+}
+.dropdownprofile ul li{
+    font-size: 1rem;
+    list-style: none;
+    color: var(--box-shadow);
+}
+
+.dropdownprofile::before{
+    content: '';
+    position: absolute;
+    top: -.7rem;
+    right: 1.1rem;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: var(--secordary-color);
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
